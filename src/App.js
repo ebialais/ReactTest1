@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const text = ""
+  function write (x){
+    for(let i=1; i<=100; i++){
+      if (i % 3 === 0){
+        x += "Fizz"
+      }
+      if (i % 5 === 0){
+        x += "Buzz"
+      }
+      if (i % 3 != 0 && i % 5 != 0) {
+        x+=i
+      }
+      x += " "
+    }
+    return x
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {write(text)}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
     </div>
   );
 }
