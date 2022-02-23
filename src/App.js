@@ -5,7 +5,7 @@ import Functions from './functions';
 function App() {
   const config = {
     3: "Fizz",
-    5: "Buzz"
+    5: "Buzz",
   }
 
   const results = Functions.getResult(1, 100, config)
