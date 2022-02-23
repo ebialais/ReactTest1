@@ -3,7 +3,6 @@ import Functions from './functions';
 
 
 function App() {
-
   const config = {
     3: "Fizz",
     5: "Buzz"
